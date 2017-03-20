@@ -1,5 +1,5 @@
 class Plane
-  def land(airport)
-    true
+  def landed?
+
   end
 end
