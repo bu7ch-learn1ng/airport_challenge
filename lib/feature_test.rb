@@ -6,4 +6,5 @@ airport = Airport.new
 
 
 airport.land(plane)
+plane.land
 plane.landed?
