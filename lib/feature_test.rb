@@ -9,3 +9,5 @@ airport.land(plane)
 plane.land
 plane.landed?
 airport.takeoff(plane)
+plane.takeoff
+plane.landed?
