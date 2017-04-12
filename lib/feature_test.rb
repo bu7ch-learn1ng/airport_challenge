@@ -1,13 +1,11 @@
 require "./lib/plane"
 require "./lib/airport"
+require "./lib/weather"
 
 plane = Plane.new
 airport = Airport.new
-
+weather = Weather.new
 
 airport.land(plane)
-plane.land
-plane.landed?
+weather.report
 airport.takeoff(plane)
-plane.takeoff
-plane.landed?
