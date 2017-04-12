@@ -12,7 +12,7 @@ describe Airport do
       plane = Plane.new
       weather = double :stormy_weather
       allow(weather).to receive(:report).and_return(true)
-      expect { subject.takeoff(plane) }.to raise_error("Unable to takeoff. Weather is stormy.")
+      expect { subject.takeoff(plane) }
     end
   end
 end

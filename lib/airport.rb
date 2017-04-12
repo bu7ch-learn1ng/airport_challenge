@@ -15,7 +15,7 @@ class Airport
 
   def takeoff(plane)
     @stormy_weather = Stormy_Weather.new.report
-    fail 'Unable to takeoff. Weather is stormy.' if @stormy_weather == true
+    raise 'Unable to takeoff. Weather is stormy.' if @stormy_weather == true
     plane.takeoff
     @planes.pop
   end
