@@ -29,4 +29,12 @@ describe Airport do
       expect { subject.land(plane, weather) }
     end
   end
+  describe 'initialization' do
+    it 'has a variable capacity' do
+      airport = Airport.new(50)
+      plane = Plane.new
+      50.times { airport.land(plane, false) }
+      expect { airport.land(plane, false) }
+    end
+  end
 end
