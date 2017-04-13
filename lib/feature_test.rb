@@ -1,9 +1,10 @@
 require "./lib/plane"
 require "./lib/airport"
-require "./lib/weather"
+
 
 plane = Plane.new
 airport = Airport.new
-weather = Stormy_Weather.new.report
 
-airport.land(plane)
+
+10.times { airport.land(plane, false) }
+airoprt.land(plane, false)
