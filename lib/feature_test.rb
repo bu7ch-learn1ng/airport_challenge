@@ -4,8 +4,6 @@ require "./lib/weather"
 
 plane = Plane.new
 airport = Airport.new
-weather = Weather.new
+weather = Stormy_Weather.new.report
 
 airport.land(plane)
-weather.report
-airport.takeoff(plane)

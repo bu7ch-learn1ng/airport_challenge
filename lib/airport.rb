@@ -5,16 +5,15 @@ require_relative 'weather'
 class Airport
   def initialize
     @planes = []
-    @stormy_weather = false
   end
 
-  def land(plane)
+  def land(plane, weather)
+    raise 'Unable to land. Weather is stormy.' if @stormy_weather == true
     plan.land
     @planes.push(plane)
   end
 
-  def takeoff(plane)
-    @stormy_weather = Stormy_Weather.new.report
+  def takeoff(plane, weather)
     raise 'Unable to takeoff. Weather is stormy.' if @stormy_weather == true
     plane.takeoff
     @planes.pop
